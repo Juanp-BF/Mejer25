@@ -1,4 +1,7 @@
-gcc c.c -o c
-./c
+sample.pdf: a.out
+	python python.py
 
-python python.py
+sample.dat: compile
+	./c
+compile:
+	gcc c.c -o c
